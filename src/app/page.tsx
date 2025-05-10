@@ -1,17 +1,27 @@
 import Link from 'next/link';
 
 // Componente para una tarjeta de servicio
-const ServiceCard = ({ title, description, icon, examples }) => (
+interface ServiceCardProps {
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+  examples: string[];
+}
+
+// Componente para una tarjeta de servicio
+const ServiceCard = ({ title, description, icon, examples }: ServiceCardProps) => (
   <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out flex flex-col">
     <div className="text-4xl mb-4 text-blue-600">{icon}</div>
     <h3 className="text-2xl font-semibold text-gray-800 mb-3">{title}</h3>
     <p className="text-gray-700 leading-relaxed mb-4 flex-grow">{description}</p>
     {examples && (
-      <div className="mt-auto pt-4 border-t border-gray-200">
-        <p className="text-sm text-gray-500"><em>{examples}</em></p>
-      </div>
+      <p className="mt-auto pt-4 border-t border-gray-200">
+        <span className="text-sm text-gray-500"><em>{examples}</em></span>
+      </p>
     )}
   </div>
+);
+
 );
 
 export default function HomePage() {

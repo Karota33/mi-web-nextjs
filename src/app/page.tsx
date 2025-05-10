@@ -97,19 +97,30 @@ export default function HomePage() {
               icon="🍳" 
               title="Consultoría Gastronómica Estratégica"
               description="Asesoramiento experto en producción culinaria, control de escandallos y costes (el food cost ideal se sitúa entre 25-35%), optimización de compras, organización eficiente de la cocina, diseño de cartas atractivas y rentables, y programas de formación personalizados para equipos de alto rendimiento. Implementamos sistemas para mejorar márgenes y eficiencia operativa."
-              examples="Ej: Reducción del coste de materia prima en un 5% manteniendo calidad, optimización de turnos para mejorar la productividad del personal."
+              examples={[
+  "Reducción del coste de materia prima en un 5% manteniendo calidad",
+  "Optimización de turnos para mejorar la productividad del personal"
+]}
+
             />
             <ServiceCard 
               icon="🎓" 
               title="Formación y Contenidos Didácticos Innovadores"
               description="Diseño de sesiones formativas impactantes y adaptadas a las necesidades actuales (considerando la alta rotación del sector, donde hasta el 75% de empleados busca cambiar). Creación de recursos didácticos para certificados profesionales (SEPE), elaboración de fichas técnicas visuales y efectivas, planificación docente asistida por IA y desarrollo de plantillas interactivas para un aprendizaje dinámico y práctico."
-              examples="Ej: Desarrollo de un programa de onboarding para nuevo personal que reduce el tiempo de adaptación en un 30%."
+              examples={[
+  "Desarrollo de un programa de onboarding para nuevo personal que reduce el tiempo de adaptación en un 30%"
+]}
+
             />
             <ServiceCard 
               icon="🤖" 
               title="Automatización Inteligente y Herramientas Digitales"
               description="Implementación práctica de Inteligencia Artificial generativa (ChatGPT y similares) y desarrollo de automatizaciones con Make y Notion para optimizar flujos de trabajo. Te ayudo a pasar de una gestión manual (G0-G1) a procesos más eficientes y escalables (G2-G3), liberando tiempo para la estrategia. Formación personalizada para que domines estas herramientas con autonomía."
-              examples="Ej: Automatización de la gestión de reservas o pedidos online, creación de dashboards en Notion para control de KPIs."
+              examples={[
+  "Automatización de la gestión de reservas o pedidos online",
+  "Creación de dashboards en Notion para control de KPIs"
+]}
+
             />
           </div>
         </div>
